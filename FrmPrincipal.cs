@@ -54,5 +54,10 @@ namespace sistemaFormularios
         }
 
         // menu vendas e produtos foi instanciado no design -> click
+
+        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
