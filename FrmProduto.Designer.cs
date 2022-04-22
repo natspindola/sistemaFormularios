@@ -49,7 +49,7 @@ namespace sistemaFormularios
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnVendas2);
             this.Name = "FrmProduto";
-            this.Text = "Vendas";
+            this.Text = "Produtos";
             this.ResumeLayout(false);
 
         }

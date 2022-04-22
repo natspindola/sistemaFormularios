@@ -41,10 +41,18 @@ namespace sistemaFormularios
             frm.Show();
         }
 
-        private void MenuCalc_Click(object sender, EventArgs e)
+        private void MenuCadastro_Click(object sender, EventArgs e)
+        {
+            FrmCadastro frm = new FrmCadastro();
+            frm.Show();
+        }
+
+        private void MenuCalc_Click_1(object sender, EventArgs e)
         {
             FrmCalculadora frm = new FrmCalculadora();
             frm.Show();
         }
+
+        // menu vendas e produtos foi instanciado no design -> click
     }
 }

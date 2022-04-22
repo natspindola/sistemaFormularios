@@ -129,25 +129,28 @@ namespace sistemaFormularios
             this.MenuCadastro.Name = "MenuCadastro";
             this.MenuCadastro.Size = new System.Drawing.Size(180, 22);
             this.MenuCadastro.Text = "Cadastro";
+            this.MenuCadastro.Click += new System.EventHandler(this.MenuCadastro_Click);
             // 
             // MenuCalc
             // 
             this.MenuCalc.Name = "MenuCalc";
             this.MenuCalc.Size = new System.Drawing.Size(180, 22);
             this.MenuCalc.Text = "Calculadora";
-            this.MenuCalc.Click += new System.EventHandler(this.MenuCalc_Click);
+            this.MenuCalc.Click += new System.EventHandler(this.MenuCalc_Click_1);
             // 
             // MenuProduto
             // 
             this.MenuProduto.Name = "MenuProduto";
             this.MenuProduto.Size = new System.Drawing.Size(180, 22);
             this.MenuProduto.Text = "Produto";
+            this.MenuProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
             // MenuVenda
             // 
             this.MenuVenda.Name = "MenuVenda";
             this.MenuVenda.Size = new System.Drawing.Size(180, 22);
             this.MenuVenda.Text = "Venda";
+            this.MenuVenda.Click += new System.EventHandler(this.btnVenda_Click);
             // 
             // fecharToolStripMenuItem
             // 
