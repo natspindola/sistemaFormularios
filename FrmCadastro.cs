@@ -16,5 +16,24 @@ namespace sistemaFormularios
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            txtNome.Clear();
+            txtTel.Clear();
+            TxtEmail.Clear();
+            txtEnder.Clear();
+        }
+
+        private void btnClean2_Click(object sender, EventArgs e)
+        {
+            txtNomePesq.Clear();
+            txtCodigoPesq.Clear();
+        }
     }
 }

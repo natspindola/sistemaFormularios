@@ -27,5 +27,12 @@ namespace sistemaFormularios
         {
             Close();
         }
+
+        public string ListBox { get; set; }
+
+        private void checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

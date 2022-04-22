@@ -22,5 +22,10 @@ namespace sistemaFormularios
             FrmVendas frmVendas = new FrmVendas();
             frmVendas.Show();
         }
+
+        private void btnAddProduto_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -30,11 +30,11 @@ namespace sistemaFormularios
         private void InitializeComponent()
         {
             this.btnVendas2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddProduto = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,14 +51,15 @@ namespace sistemaFormularios
             this.btnVendas2.UseVisualStyleBackColor = true;
             this.btnVendas2.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // btnAddProduto
             // 
-            this.button1.Location = new System.Drawing.Point(12, 144);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Adicionar produto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddProduto.Location = new System.Drawing.Point(12, 144);
+            this.btnAddProduto.Name = "btnAddProduto";
+            this.btnAddProduto.Size = new System.Drawing.Size(105, 23);
+            this.btnAddProduto.TabIndex = 1;
+            this.btnAddProduto.Text = "Adicionar produto";
+            this.btnAddProduto.UseVisualStyleBackColor = true;
+            this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
             // button2
             // 
@@ -78,19 +79,19 @@ namespace sistemaFormularios
             this.button3.Text = "Excluir produto";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtNome.Location = new System.Drawing.Point(140, 34);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(217, 20);
+            this.txtNome.TabIndex = 4;
             // 
-            // textBox2
+            // txtCodigo
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(217, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtCodigo.Location = new System.Drawing.Point(140, 60);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(217, 20);
+            this.txtCodigo.TabIndex = 5;
             // 
             // textBox3
             // 
@@ -135,11 +136,11 @@ namespace sistemaFormularios
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddProduto);
             this.Controls.Add(this.btnVendas2);
             this.Name = "FrmProduto";
             this.Text = "Produtos";
@@ -151,11 +152,11 @@ namespace sistemaFormularios
         #endregion
 
         private System.Windows.Forms.Button btnVendas2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddProduto;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
