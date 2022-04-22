@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace sistemaFormularios
 {
-    public partial class Vendas : Form
+    public partial class FrmVendas : Form
     {
-        public Vendas()
+        public FrmVendas()
         {
             InitializeComponent();
         }

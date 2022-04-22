@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace sistemaFormularios
 {
-    public partial class Principal : Form
+    public partial class FrmProduto : Form
     {
-        public Principal()
+        public FrmProduto()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmVendas frmVendas = new FrmVendas();
+            frmVendas.Show();
         }
     }
 }
