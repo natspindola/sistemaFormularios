@@ -33,13 +33,15 @@ namespace sistemaFormularios
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnVenda = new System.Windows.Forms.Button();
             this.btnProduto = new System.Windows.Forms.Button();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalculadora
             // 
-            this.btnCalculadora.Location = new System.Drawing.Point(50, 197);
+            this.btnCalculadora.Location = new System.Drawing.Point(82, 53);
             this.btnCalculadora.Name = "btnCalculadora";
-            this.btnCalculadora.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculadora.Size = new System.Drawing.Size(238, 23);
             this.btnCalculadora.TabIndex = 0;
             this.btnCalculadora.Text = "Calculadora";
             this.btnCalculadora.UseVisualStyleBackColor = true;
@@ -47,7 +49,7 @@ namespace sistemaFormularios
             // 
             // btnCadastro
             // 
-            this.btnCadastro.Location = new System.Drawing.Point(194, 197);
+            this.btnCadastro.Location = new System.Drawing.Point(149, 352);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(75, 23);
             this.btnCadastro.TabIndex = 1;
@@ -57,7 +59,7 @@ namespace sistemaFormularios
             // 
             // btnVenda
             // 
-            this.btnVenda.Location = new System.Drawing.Point(342, 197);
+            this.btnVenda.Location = new System.Drawing.Point(257, 352);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(75, 23);
             this.btnVenda.TabIndex = 2;
@@ -67,7 +69,7 @@ namespace sistemaFormularios
             // 
             // btnProduto
             // 
-            this.btnProduto.Location = new System.Drawing.Point(194, 135);
+            this.btnProduto.Location = new System.Drawing.Point(44, 352);
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Size = new System.Drawing.Size(75, 23);
             this.btnProduto.TabIndex = 3;
@@ -75,11 +77,29 @@ namespace sistemaFormularios
             this.btnProduto.UseVisualStyleBackColor = true;
             this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(82, 27);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(238, 20);
+            this.txtNome.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Funcionário:";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 387);
+            this.ClientSize = new System.Drawing.Size(374, 387);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.btnProduto);
             this.Controls.Add(this.btnVenda);
             this.Controls.Add(this.btnCadastro);
@@ -87,6 +107,7 @@ namespace sistemaFormularios
             this.Name = "FrmPrincipal";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +117,8 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Button btnVenda;
         private System.Windows.Forms.Button btnProduto;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label1;
     }
 }
 

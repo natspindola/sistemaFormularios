@@ -12,9 +12,16 @@ namespace sistemaFormularios
 {
     public partial class FrmCalculadora : Form
     {
-        public FrmCalculadora()
+        public FrmCalculadora(string nome)
         {
             InitializeComponent();
+
+            lblNome.Text = nome.ToUpper();
+        }
+
+        private void FrmCalculadora_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

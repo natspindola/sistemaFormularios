@@ -19,7 +19,12 @@ namespace sistemaFormularios
 
         private void btnCalculadora_Click(object sender, EventArgs e)
         {
-            FrmCalculadora frm = new FrmCalculadora();
+            if(txtNome.Text.Trim() == " ")
+            {
+                MessageBox.Show("Necessário inserir nome");
+                return;
+            }
+            FrmCalculadora frm = new FrmCalculadora(txtNome.Text);
             frm.Show();
         }
 
