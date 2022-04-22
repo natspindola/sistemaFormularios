@@ -39,11 +39,14 @@ namespace sistemaFormularios
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnVendas2
             // 
-            this.btnVendas2.Location = new System.Drawing.Point(373, 144);
+            this.btnVendas2.Location = new System.Drawing.Point(373, 156);
             this.btnVendas2.Name = "btnVendas2";
             this.btnVendas2.Size = new System.Drawing.Size(75, 23);
             this.btnVendas2.TabIndex = 0;
@@ -53,7 +56,7 @@ namespace sistemaFormularios
             // 
             // btnAddProduto
             // 
-            this.btnAddProduto.Location = new System.Drawing.Point(12, 144);
+            this.btnAddProduto.Location = new System.Drawing.Point(12, 156);
             this.btnAddProduto.Name = "btnAddProduto";
             this.btnAddProduto.Size = new System.Drawing.Size(105, 23);
             this.btnAddProduto.TabIndex = 1;
@@ -63,7 +66,7 @@ namespace sistemaFormularios
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(140, 144);
+            this.button2.Location = new System.Drawing.Point(140, 156);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 23);
             this.button2.TabIndex = 2;
@@ -72,7 +75,7 @@ namespace sistemaFormularios
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(272, 144);
+            this.button3.Location = new System.Drawing.Point(272, 156);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 23);
             this.button3.TabIndex = 3;
@@ -112,26 +115,56 @@ namespace sistemaFormularios
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 63);
+            this.label2.Location = new System.Drawing.Point(46, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Código do produto:";
+            this.label2.Text = "Valor do produto:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 89);
+            this.label3.Location = new System.Drawing.Point(37, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Observações:";
+            this.label3.Text = "Código do produto:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Tomato;
+            this.button1.Location = new System.Drawing.Point(382, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(61, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Observações:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(140, 112);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(217, 20);
+            this.textBox1.TabIndex = 18;
             // 
             // FrmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 213);
+            this.ClientSize = new System.Drawing.Size(460, 197);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -161,5 +194,8 @@ namespace sistemaFormularios
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
