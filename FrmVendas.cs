@@ -16,5 +16,16 @@ namespace sistemaFormularios
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmCalculadora frmCalculadora = new FrmCalculadora();
+            frmCalculadora.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
