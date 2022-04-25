@@ -30,10 +30,10 @@ namespace sistemaFormularios
             txtEnder.Clear();
         }
 
-        private void btnClean2_Click(object sender, EventArgs e)
+        private void btnClientes_Click(object sender, EventArgs e)
         {
-            txtNomePesq.Clear();
-            txtCodigoPesq.Clear();
+            FrmClientes frm = new FrmClientes();
+            frm.Show();
         }
     }
 }

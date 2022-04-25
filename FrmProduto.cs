@@ -29,5 +29,13 @@ namespace sistemaFormularios
             FrmVendas frm = new FrmVendas();
             frm.Show();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNome.Clear();
+            txtValor.Clear();
+            txtCodigo.Clear();
+            txtObs.Clear();
+        }
     }
 }

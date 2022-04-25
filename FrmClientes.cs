@@ -16,5 +16,22 @@ namespace sistemaFormularios
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmCadastro frm = new FrmCadastro();
+            frm.Show();
+        }
+
+        private void btnClean2_Click(object sender, EventArgs e)
+        {
+            txtNomePesq.Clear();
+            txtCodigoPesq.Clear();
+        }
     }
 }

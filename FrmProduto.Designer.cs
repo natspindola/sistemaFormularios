@@ -34,19 +34,20 @@ namespace sistemaFormularios
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtObs = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVendas2
             // 
-            this.btnVendas2.Location = new System.Drawing.Point(373, 156);
+            this.btnVendas2.Location = new System.Drawing.Point(382, 156);
             this.btnVendas2.Name = "btnVendas2";
             this.btnVendas2.Size = new System.Drawing.Size(75, 23);
             this.btnVendas2.TabIndex = 0;
@@ -56,29 +57,29 @@ namespace sistemaFormularios
             // 
             // btnAddProduto
             // 
-            this.btnAddProduto.Location = new System.Drawing.Point(12, 156);
+            this.btnAddProduto.Location = new System.Drawing.Point(2, 156);
             this.btnAddProduto.Name = "btnAddProduto";
-            this.btnAddProduto.Size = new System.Drawing.Size(105, 23);
+            this.btnAddProduto.Size = new System.Drawing.Size(79, 23);
             this.btnAddProduto.TabIndex = 1;
-            this.btnAddProduto.Text = "Adicionar produto";
+            this.btnAddProduto.Text = "Adicionar";
             this.btnAddProduto.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(140, 156);
+            this.button2.Location = new System.Drawing.Point(99, 156);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 23);
+            this.button2.Size = new System.Drawing.Size(76, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Pesquisar produto";
+            this.button2.Text = "Pesquisar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(272, 156);
+            this.button3.Location = new System.Drawing.Point(191, 156);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Excluir produto";
+            this.button3.Text = "Excluir";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // txtNome
@@ -88,19 +89,19 @@ namespace sistemaFormularios
             this.txtNome.Size = new System.Drawing.Size(217, 20);
             this.txtNome.TabIndex = 4;
             // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(140, 60);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(217, 20);
+            this.txtValor.TabIndex = 5;
+            // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(140, 60);
+            this.txtCodigo.Location = new System.Drawing.Point(140, 86);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(217, 20);
-            this.txtCodigo.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(140, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtCodigo.TabIndex = 6;
             // 
             // label1
             // 
@@ -149,26 +150,37 @@ namespace sistemaFormularios
             this.label4.TabIndex = 19;
             this.label4.Text = "Observações:";
             // 
-            // textBox1
+            // txtObs
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
-            this.textBox1.TabIndex = 18;
+            this.txtObs.Location = new System.Drawing.Point(140, 112);
+            this.txtObs.Name = "txtObs";
+            this.txtObs.Size = new System.Drawing.Size(217, 20);
+            this.txtObs.TabIndex = 18;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(291, 156);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 20;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // FrmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 197);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtObs);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -188,13 +200,14 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtObs;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
