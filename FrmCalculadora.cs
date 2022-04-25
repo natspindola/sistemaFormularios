@@ -142,6 +142,23 @@ namespace sistemaFormularios
             }
         }
 
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string Apagar = txtResultado.Text;
+
+                Apagar = Apagar.Remove(Apagar.Length - 1);
+
+                txtResultado.Text = Apagar;
+                txtOperacao.Text = Apagar;
+            }
+            catch(Exception)
+            {
+
+            }
+        }
+
         private void btnIgual_Click(object sender, EventArgs e)
         {
             valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);

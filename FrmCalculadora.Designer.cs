@@ -51,6 +51,8 @@ namespace sistemaFormularios
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnPorcentagem = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
+            this.btnApagar = new System.Windows.Forms.Button();
+            this.txtOperacao = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -74,9 +76,10 @@ namespace sistemaFormularios
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(12, 32);
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(12, 61);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(304, 20);
+            this.txtResultado.Size = new System.Drawing.Size(304, 45);
             this.txtResultado.TabIndex = 20;
             this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -90,7 +93,7 @@ namespace sistemaFormularios
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(12, 172);
+            this.btn1.Location = new System.Drawing.Point(12, 223);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(56, 46);
             this.btn1.TabIndex = 22;
@@ -100,7 +103,7 @@ namespace sistemaFormularios
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(74, 172);
+            this.btn2.Location = new System.Drawing.Point(74, 223);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(56, 46);
             this.btn2.TabIndex = 23;
@@ -110,7 +113,7 @@ namespace sistemaFormularios
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(136, 172);
+            this.btn3.Location = new System.Drawing.Point(136, 223);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(56, 46);
             this.btn3.TabIndex = 24;
@@ -120,7 +123,7 @@ namespace sistemaFormularios
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(12, 120);
+            this.btn4.Location = new System.Drawing.Point(12, 171);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(56, 46);
             this.btn4.TabIndex = 25;
@@ -130,7 +133,7 @@ namespace sistemaFormularios
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(74, 120);
+            this.btn5.Location = new System.Drawing.Point(74, 171);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(56, 46);
             this.btn5.TabIndex = 26;
@@ -140,7 +143,7 @@ namespace sistemaFormularios
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(136, 120);
+            this.btn6.Location = new System.Drawing.Point(136, 171);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(56, 46);
             this.btn6.TabIndex = 27;
@@ -150,7 +153,7 @@ namespace sistemaFormularios
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(12, 68);
+            this.btn7.Location = new System.Drawing.Point(12, 119);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(56, 46);
             this.btn7.TabIndex = 28;
@@ -160,7 +163,7 @@ namespace sistemaFormularios
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(74, 68);
+            this.btn8.Location = new System.Drawing.Point(74, 119);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(56, 46);
             this.btn8.TabIndex = 29;
@@ -170,7 +173,7 @@ namespace sistemaFormularios
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(136, 68);
+            this.btn9.Location = new System.Drawing.Point(136, 119);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(56, 46);
             this.btn9.TabIndex = 30;
@@ -180,7 +183,7 @@ namespace sistemaFormularios
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(12, 224);
+            this.btn0.Location = new System.Drawing.Point(12, 275);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(118, 46);
             this.btn0.TabIndex = 31;
@@ -191,7 +194,7 @@ namespace sistemaFormularios
             // btnAdicao
             // 
             this.btnAdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicao.Location = new System.Drawing.Point(198, 224);
+            this.btnAdicao.Location = new System.Drawing.Point(198, 275);
             this.btnAdicao.Name = "btnAdicao";
             this.btnAdicao.Size = new System.Drawing.Size(56, 46);
             this.btnAdicao.TabIndex = 32;
@@ -202,7 +205,7 @@ namespace sistemaFormularios
             // btnSubtracao
             // 
             this.btnSubtracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtracao.Location = new System.Drawing.Point(198, 172);
+            this.btnSubtracao.Location = new System.Drawing.Point(198, 223);
             this.btnSubtracao.Name = "btnSubtracao";
             this.btnSubtracao.Size = new System.Drawing.Size(56, 46);
             this.btnSubtracao.TabIndex = 33;
@@ -213,7 +216,7 @@ namespace sistemaFormularios
             // btnMultip
             // 
             this.btnMultip.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultip.Location = new System.Drawing.Point(198, 120);
+            this.btnMultip.Location = new System.Drawing.Point(198, 171);
             this.btnMultip.Name = "btnMultip";
             this.btnMultip.Size = new System.Drawing.Size(56, 46);
             this.btnMultip.TabIndex = 34;
@@ -224,7 +227,7 @@ namespace sistemaFormularios
             // btnDivisao
             // 
             this.btnDivisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivisao.Location = new System.Drawing.Point(198, 68);
+            this.btnDivisao.Location = new System.Drawing.Point(198, 119);
             this.btnDivisao.Name = "btnDivisao";
             this.btnDivisao.Size = new System.Drawing.Size(56, 46);
             this.btnDivisao.TabIndex = 35;
@@ -235,7 +238,7 @@ namespace sistemaFormularios
             // btnVirgula
             // 
             this.btnVirgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVirgula.Location = new System.Drawing.Point(136, 224);
+            this.btnVirgula.Location = new System.Drawing.Point(136, 275);
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(56, 46);
             this.btnVirgula.TabIndex = 36;
@@ -245,7 +248,7 @@ namespace sistemaFormularios
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(260, 120);
+            this.btnLimpar.Location = new System.Drawing.Point(260, 223);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(56, 46);
             this.btnLimpar.TabIndex = 38;
@@ -256,7 +259,7 @@ namespace sistemaFormularios
             // btnPorcentagem
             // 
             this.btnPorcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPorcentagem.Location = new System.Drawing.Point(260, 68);
+            this.btnPorcentagem.Location = new System.Drawing.Point(260, 119);
             this.btnPorcentagem.Name = "btnPorcentagem";
             this.btnPorcentagem.Size = new System.Drawing.Size(56, 46);
             this.btnPorcentagem.TabIndex = 39;
@@ -267,19 +270,40 @@ namespace sistemaFormularios
             // btnIgual
             // 
             this.btnIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIgual.Location = new System.Drawing.Point(260, 171);
+            this.btnIgual.Location = new System.Drawing.Point(260, 275);
             this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(56, 99);
+            this.btnIgual.Size = new System.Drawing.Size(56, 46);
             this.btnIgual.TabIndex = 40;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = true;
             this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
+            // btnApagar
+            // 
+            this.btnApagar.Location = new System.Drawing.Point(260, 171);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(56, 46);
+            this.btnApagar.TabIndex = 41;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // txtOperacao
+            // 
+            this.txtOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOperacao.Location = new System.Drawing.Point(12, 32);
+            this.txtOperacao.Name = "txtOperacao";
+            this.txtOperacao.Size = new System.Drawing.Size(304, 23);
+            this.txtOperacao.TabIndex = 42;
+            this.txtOperacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // FrmCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 288);
+            this.ClientSize = new System.Drawing.Size(326, 336);
+            this.Controls.Add(this.txtOperacao);
+            this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnPorcentagem);
             this.Controls.Add(this.btnLimpar);
@@ -333,5 +357,7 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnPorcentagem;
         private System.Windows.Forms.Button btnIgual;
+        private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.TextBox txtOperacao;
     }
 }
