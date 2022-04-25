@@ -17,19 +17,64 @@ namespace sistemaFormularios
             InitializeComponent();
         }
 
-        private void FrmCalculadora_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void txtResultado_TextChanged(object sender, EventArgs e)
+        private void btnLimpar_Click(object sender, EventArgs e)
         {
+            txtResultado.Clear();
+        }
 
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "0";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "1";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "5";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "6";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "7";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "8";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "9";
         }
     }
 }
