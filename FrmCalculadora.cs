@@ -26,5 +26,10 @@ namespace sistemaFormularios
         {
             Close();
         }
+
+        private void txtResultado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
