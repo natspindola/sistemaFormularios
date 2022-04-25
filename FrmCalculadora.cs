@@ -53,6 +53,7 @@ namespace sistemaFormularios
         private void btn0_Click(object sender, EventArgs e)
         {
             txtResultado.Text += "0";
+            txtOperacao.Text += "0";
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -163,37 +164,29 @@ namespace sistemaFormularios
             }
         }
 
-        private void btnPorcentagem_Click(object sender, EventArgs e)
-        {
-            txtOperacao.Text += "%";
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "PORCENTAGEM";
-                lblOperacao.Text = "%";
-            }
-        }
-
         private void btnIgual_Click(object sender, EventArgs e)
         {
             txtOperacao.Text += "=";
             valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
             lblOperacao.Text = "";
 
-            if(operacao == "SOMA")
+            if (operacao == "SOMA")
             {
                 txtResultado.Text = Convert.ToString(valor1 + valor2);
-            } else if(operacao == "SUBTRACAO")
+            }
+            else if (operacao == "SUBTRACAO")
             {
                 txtResultado.Text = Convert.ToString(valor1 - valor2);
-            } else if(operacao == "MULTIPLICACAO")
+            }
+            else if (operacao == "MULTIPLICACAO")
             {
                 txtResultado.Text = Convert.ToString(valor1 * valor2);
-            } else if(operacao == "DIVISAO")
+            }
+            else if (operacao == "DIVISAO")
             {
                 txtResultado.Text = Convert.ToString(valor1 / valor2);
-            } else if(operacao == "PORCENTAGEM")
+            }
+            else if (operacao == "PORCENTAGEM")
             {
                 txtResultado.Text = Convert.ToString(valor1 % valor2);
             }
