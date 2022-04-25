@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,9 @@ namespace sistemaFormularios
 {
     public partial class FrmCalculadora : Form
     {
+        decimal valor1 = 0, valor2 = 0;
+        string operacao = "";
+
         public FrmCalculadora()
         {
             InitializeComponent();
@@ -75,6 +79,73 @@ namespace sistemaFormularios
         private void btn9_Click(object sender, EventArgs e)
         {
             txtResultado.Text += "9";
+        }
+
+        private void btnVirgula_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += ",";
+        }
+
+        private void btnAdicao_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "SOMA";
+            lblOperacao.Text = "+";
+        }
+
+        private void btnSubtracao_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "SUBTRACAO";
+            lblOperacao.Text = "-";
+        }
+
+        private void btnMultip_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "MULTIPLICACAO";
+            lblOperacao.Text = "*";
+        }
+
+        private void btnDivisao_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "DIVISAO";
+            lblOperacao.Text = "/";
+        }
+
+        private void btnPorcentagem_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "PORCENTAGEM";
+            lblOperacao.Text = "%";
+        }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+            valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+
+            if(operacao == "SOMA")
+            {
+                txtResultado.Text = Convert.ToString(valor1 + valor2);
+            } else if(operacao == "SUBTRACAO")
+            {
+                txtResultado.Text = Convert.ToString(valor1 - valor2);
+            } else if(operacao == "MULTIPLICACAO")
+            {
+                txtResultado.Text = Convert.ToString(valor1 * valor2);
+            } else if(operacao == "DIVISAO")
+            {
+                txtResultado.Text = Convert.ToString(valor1 / valor2);
+            } else if(operacao == "PORCENTAGEM")
+            {
+                txtResultado.Text = Convert.ToString(valor1 % valor2);
+            }
         }
     }
 }

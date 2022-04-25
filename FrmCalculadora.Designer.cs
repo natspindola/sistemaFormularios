@@ -47,7 +47,7 @@ namespace sistemaFormularios
             this.btnSubtracao = new System.Windows.Forms.Button();
             this.btnMultip = new System.Windows.Forms.Button();
             this.btnDivisao = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnVirgula = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnPorcentagem = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
@@ -197,6 +197,7 @@ namespace sistemaFormularios
             this.btnAdicao.TabIndex = 32;
             this.btnAdicao.Text = "+";
             this.btnAdicao.UseVisualStyleBackColor = true;
+            this.btnAdicao.Click += new System.EventHandler(this.btnAdicao_Click);
             // 
             // btnSubtracao
             // 
@@ -207,6 +208,7 @@ namespace sistemaFormularios
             this.btnSubtracao.TabIndex = 33;
             this.btnSubtracao.Text = "-";
             this.btnSubtracao.UseVisualStyleBackColor = true;
+            this.btnSubtracao.Click += new System.EventHandler(this.btnSubtracao_Click);
             // 
             // btnMultip
             // 
@@ -217,6 +219,7 @@ namespace sistemaFormularios
             this.btnMultip.TabIndex = 34;
             this.btnMultip.Text = "*";
             this.btnMultip.UseVisualStyleBackColor = true;
+            this.btnMultip.Click += new System.EventHandler(this.btnMultip_Click);
             // 
             // btnDivisao
             // 
@@ -227,20 +230,22 @@ namespace sistemaFormularios
             this.btnDivisao.TabIndex = 35;
             this.btnDivisao.Text = "/";
             this.btnDivisao.UseVisualStyleBackColor = true;
+            this.btnDivisao.Click += new System.EventHandler(this.btnDivisao_Click);
             // 
-            // button16
+            // btnVirgula
             // 
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(136, 224);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(56, 46);
-            this.button16.TabIndex = 36;
-            this.button16.Text = ",";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnVirgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVirgula.Location = new System.Drawing.Point(136, 224);
+            this.btnVirgula.Name = "btnVirgula";
+            this.btnVirgula.Size = new System.Drawing.Size(56, 46);
+            this.btnVirgula.TabIndex = 36;
+            this.btnVirgula.Text = ",";
+            this.btnVirgula.UseVisualStyleBackColor = true;
+            this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(260, 224);
+            this.btnLimpar.Location = new System.Drawing.Point(260, 120);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(56, 46);
             this.btnLimpar.TabIndex = 38;
@@ -257,16 +262,18 @@ namespace sistemaFormularios
             this.btnPorcentagem.TabIndex = 39;
             this.btnPorcentagem.Text = "%";
             this.btnPorcentagem.UseVisualStyleBackColor = true;
+            this.btnPorcentagem.Click += new System.EventHandler(this.btnPorcentagem_Click);
             // 
             // btnIgual
             // 
             this.btnIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIgual.Location = new System.Drawing.Point(260, 172);
+            this.btnIgual.Location = new System.Drawing.Point(260, 171);
             this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(56, 46);
+            this.btnIgual.Size = new System.Drawing.Size(56, 99);
             this.btnIgual.TabIndex = 40;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = true;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // FrmCalculadora
             // 
@@ -276,7 +283,7 @@ namespace sistemaFormularios
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnPorcentagem);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnVirgula);
             this.Controls.Add(this.btnDivisao);
             this.Controls.Add(this.btnMultip);
             this.Controls.Add(this.btnSubtracao);
@@ -322,7 +329,7 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnSubtracao;
         private System.Windows.Forms.Button btnMultip;
         private System.Windows.Forms.Button btnDivisao;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnVirgula;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnPorcentagem;
         private System.Windows.Forms.Button btnIgual;
