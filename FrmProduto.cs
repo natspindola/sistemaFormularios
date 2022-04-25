@@ -23,5 +23,11 @@ namespace sistemaFormularios
         {
             Close();
         }
+
+        private void btnVendas2_Click(object sender, EventArgs e)
+        {
+            FrmVendas frm = new FrmVendas();
+            frm.Show();
+        }
     }
 }

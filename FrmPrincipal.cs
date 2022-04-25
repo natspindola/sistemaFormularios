@@ -53,6 +53,12 @@ namespace sistemaFormularios
             frm.Show();
         }
 
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FrmClientes frm = new FrmClientes();
+            frm.Show();
+        }
+
         // menu vendas e produtos foi instanciado no design -> click
 
         private void fecharToolStripMenuItem_Click(object sender, EventArgs e)

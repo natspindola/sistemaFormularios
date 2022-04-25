@@ -36,22 +36,23 @@ namespace sistemaFormularios
             this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuCadastro = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuCalc = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuProduto = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuVenda = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCalculadora
             // 
             this.btnCalculadora.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalculadora.Location = new System.Drawing.Point(178, 174);
+            this.btnCalculadora.Location = new System.Drawing.Point(108, 203);
             this.btnCalculadora.Name = "btnCalculadora";
-            this.btnCalculadora.Size = new System.Drawing.Size(73, 23);
+            this.btnCalculadora.Size = new System.Drawing.Size(115, 23);
             this.btnCalculadora.TabIndex = 0;
             this.btnCalculadora.Text = "Calculadora";
             this.btnCalculadora.UseVisualStyleBackColor = true;
@@ -60,20 +61,20 @@ namespace sistemaFormularios
             // btnCadastro
             // 
             this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastro.Location = new System.Drawing.Point(73, 133);
+            this.btnCadastro.Location = new System.Drawing.Point(21, 133);
             this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastro.Size = new System.Drawing.Size(132, 23);
             this.btnCadastro.TabIndex = 1;
-            this.btnCadastro.Text = "Cadastro";
+            this.btnCadastro.Text = "Cadastro de clientes";
             this.btnCadastro.UseVisualStyleBackColor = true;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnVenda
             // 
             this.btnVenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVenda.Location = new System.Drawing.Point(73, 174);
+            this.btnVenda.Location = new System.Drawing.Point(191, 174);
             this.btnVenda.Name = "btnVenda";
-            this.btnVenda.Size = new System.Drawing.Size(75, 23);
+            this.btnVenda.Size = new System.Drawing.Size(101, 23);
             this.btnVenda.TabIndex = 2;
             this.btnVenda.Text = "Venda";
             this.btnVenda.UseVisualStyleBackColor = true;
@@ -82,11 +83,11 @@ namespace sistemaFormularios
             // btnProduto
             // 
             this.btnProduto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProduto.Location = new System.Drawing.Point(176, 133);
+            this.btnProduto.Location = new System.Drawing.Point(21, 174);
             this.btnProduto.Name = "btnProduto";
-            this.btnProduto.Size = new System.Drawing.Size(75, 23);
+            this.btnProduto.Size = new System.Drawing.Size(132, 23);
             this.btnProduto.TabIndex = 3;
-            this.btnProduto.Text = "Produto";
+            this.btnProduto.Text = "Cadastro de Produto";
             this.btnProduto.UseVisualStyleBackColor = true;
             this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
@@ -119,28 +120,43 @@ namespace sistemaFormularios
             // MenuCadastro
             // 
             this.MenuCadastro.Name = "MenuCadastro";
-            this.MenuCadastro.Size = new System.Drawing.Size(180, 22);
+            this.MenuCadastro.Size = new System.Drawing.Size(137, 22);
             this.MenuCadastro.Text = "Cadastro";
             this.MenuCadastro.Click += new System.EventHandler(this.MenuCadastro_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(134, 6);
             // 
             // MenuCalc
             // 
             this.MenuCalc.Name = "MenuCalc";
-            this.MenuCalc.Size = new System.Drawing.Size(180, 22);
+            this.MenuCalc.Size = new System.Drawing.Size(137, 22);
             this.MenuCalc.Text = "Calculadora";
             this.MenuCalc.Click += new System.EventHandler(this.MenuCalc_Click_1);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(134, 6);
             // 
             // MenuProduto
             // 
             this.MenuProduto.Name = "MenuProduto";
-            this.MenuProduto.Size = new System.Drawing.Size(180, 22);
+            this.MenuProduto.Size = new System.Drawing.Size(137, 22);
             this.MenuProduto.Text = "Produto";
             this.MenuProduto.Click += new System.EventHandler(this.btnProduto_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(134, 6);
             // 
             // MenuVenda
             // 
             this.MenuVenda.Name = "MenuVenda";
-            this.MenuVenda.Size = new System.Drawing.Size(180, 22);
+            this.MenuVenda.Size = new System.Drawing.Size(137, 22);
             this.MenuVenda.Text = "Venda";
             this.MenuVenda.Click += new System.EventHandler(this.btnVenda_Click);
             // 
@@ -151,27 +167,24 @@ namespace sistemaFormularios
             this.fecharToolStripMenuItem.Text = "Fechar";
             this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // btnClientes
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClientes.Location = new System.Drawing.Point(191, 133);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(101, 23);
+            this.btnClientes.TabIndex = 7;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(331, 258);
+            this.ClientSize = new System.Drawing.Size(331, 239);
+            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnProduto);
             this.Controls.Add(this.btnVenda);
             this.Controls.Add(this.btnCadastro);
@@ -203,6 +216,7 @@ namespace sistemaFormularios
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Button btnClientes;
     }
 }
 
