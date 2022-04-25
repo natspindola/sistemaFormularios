@@ -29,6 +29,7 @@ namespace sistemaFormularios
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtResultado.Clear();
+            lblOperacao.Text = "";
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -83,52 +84,68 @@ namespace sistemaFormularios
 
         private void btnVirgula_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += ",";
+            txtResultado.Text += ".";
         }
 
         private void btnAdicao_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-            txtResultado.Text = "";
-            operacao = "SOMA";
-            lblOperacao.Text = "+";
+            if(txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "SOMA";
+                lblOperacao.Text = "+";
+            }
         }
 
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-            txtResultado.Text = "";
-            operacao = "SUBTRACAO";
-            lblOperacao.Text = "-";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "SUBTRACAO";
+                lblOperacao.Text = "-";
+            }
         }
 
         private void btnMultip_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-            txtResultado.Text = "";
-            operacao = "MULTIPLICACAO";
-            lblOperacao.Text = "*";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "MULTIPLICACAO";
+                lblOperacao.Text = "*";
+            }
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-            txtResultado.Text = "";
-            operacao = "DIVISAO";
-            lblOperacao.Text = "/";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "DIVISAO";
+                lblOperacao.Text = "/";
+            }
         }
 
         private void btnPorcentagem_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-            txtResultado.Text = "";
-            operacao = "PORCENTAGEM";
-            lblOperacao.Text = "%";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "PORCENTAGEM";
+                lblOperacao.Text = "%";
+            }
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
             valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            lblOperacao.Text = "";
 
             if(operacao == "SOMA")
             {

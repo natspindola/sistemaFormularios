@@ -239,7 +239,7 @@ namespace sistemaFormularios
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(56, 46);
             this.btnVirgula.TabIndex = 36;
-            this.btnVirgula.Text = ",";
+            this.btnVirgula.Text = ".";
             this.btnVirgula.UseVisualStyleBackColor = true;
             this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
