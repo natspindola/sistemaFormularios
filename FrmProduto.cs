@@ -12,20 +12,11 @@ namespace sistemaFormularios
 {
     public partial class FrmProduto : Form
     {
+        public object ListBoxVendas { get; private set; }
+
         public FrmProduto()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FrmVendas frmVendas = new FrmVendas();
-            frmVendas.Show();
-        }
-
-        private void btnAddProduto_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void button1_Click_1(object sender, EventArgs e)

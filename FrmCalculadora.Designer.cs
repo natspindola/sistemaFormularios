@@ -30,9 +30,6 @@ namespace sistemaFormularios
         private void InitializeComponent()
         {
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtResultado = new System.Windows.Forms.TextBox();
-            this.lblOperacao = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -51,6 +48,10 @@ namespace sistemaFormularios
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblOperacao = new System.Windows.Forms.Label();
+            this.lblOperacao1 = new System.Windows.Forms.Label();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.txtOperacao = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -64,31 +65,6 @@ namespace sistemaFormularios
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 19;
-            // 
-            // txtResultado
-            // 
-            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(12, 51);
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(304, 45);
-            this.txtResultado.TabIndex = 20;
-            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblOperacao
-            // 
-            this.lblOperacao.AutoSize = true;
-            this.lblOperacao.Location = new System.Drawing.Point(18, 35);
-            this.lblOperacao.Name = "lblOperacao";
-            this.lblOperacao.Size = new System.Drawing.Size(0, 13);
-            this.lblOperacao.TabIndex = 21;
             // 
             // btn1
             // 
@@ -276,6 +252,41 @@ namespace sistemaFormularios
             this.btnApagar.UseVisualStyleBackColor = true;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 19;
+            // 
+            // lblOperacao
+            // 
+            this.lblOperacao.AutoSize = true;
+            this.lblOperacao.Location = new System.Drawing.Point(18, 35);
+            this.lblOperacao.Name = "lblOperacao";
+            this.lblOperacao.Size = new System.Drawing.Size(0, 13);
+            this.lblOperacao.TabIndex = 21;
+            // 
+            // lblOperacao1
+            // 
+            this.lblOperacao1.AutoSize = true;
+            this.lblOperacao1.BackColor = System.Drawing.SystemColors.Window;
+            this.lblOperacao1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOperacao1.Location = new System.Drawing.Point(16, 65);
+            this.lblOperacao1.Name = "lblOperacao1";
+            this.lblOperacao1.Size = new System.Drawing.Size(0, 25);
+            this.lblOperacao1.TabIndex = 43;
+            // 
+            // txtResultado
+            // 
+            this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResultado.Location = new System.Drawing.Point(12, 51);
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(304, 45);
+            this.txtResultado.TabIndex = 20;
+            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // txtOperacao
             // 
             this.txtOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -290,6 +301,7 @@ namespace sistemaFormularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 317);
+            this.Controls.Add(this.lblOperacao1);
             this.Controls.Add(this.txtOperacao);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnIgual);
@@ -323,9 +335,6 @@ namespace sistemaFormularios
         #endregion
 
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtResultado;
-        private System.Windows.Forms.Label lblOperacao;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
@@ -344,6 +353,10 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblOperacao;
+        private System.Windows.Forms.Label lblOperacao1;
+        private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.TextBox txtOperacao;
     }
 }

@@ -124,7 +124,7 @@ namespace sistemaFormularios
                 valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
                 txtResultado.Text = "";
                 operacao = "SOMA";
-                lblOperacao.Text = "+";
+                lblOperacao1.Text = "+";
             }
         }
 
@@ -136,7 +136,7 @@ namespace sistemaFormularios
                 valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
                 txtResultado.Text = "";
                 operacao = "SUBTRACAO";
-                lblOperacao.Text = "-";
+                lblOperacao1.Text = "-";
             }
         }
 
@@ -148,7 +148,7 @@ namespace sistemaFormularios
                 valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
                 txtResultado.Text = "";
                 operacao = "MULTIPLICACAO";
-                lblOperacao.Text = "*";
+                lblOperacao1.Text = "*";
             }
         }
 
@@ -160,7 +160,7 @@ namespace sistemaFormularios
                 valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
                 txtResultado.Text = "";
                 operacao = "DIVISAO";
-                lblOperacao.Text = "/";
+                lblOperacao1.Text = "/";
             }
         }
 
@@ -168,7 +168,7 @@ namespace sistemaFormularios
         {
             txtOperacao.Text += "=";
             valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-            lblOperacao.Text = "";
+            lblOperacao1.Text = "";
 
             if (operacao == "SOMA")
             {

@@ -33,7 +33,7 @@ namespace sistemaFormularios
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnConcluir = new System.Windows.Forms.Button();
             this.btnCalculadora = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.ListBoxVendas = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -76,20 +76,20 @@ namespace sistemaFormularios
             this.btnCalculadora.UseVisualStyleBackColor = true;
             this.btnCalculadora.Click += new System.EventHandler(this.button3_Click);
             // 
-            // checkedListBox1
+            // ListBoxVendas
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(128, 29);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(180, 184);
-            this.checkedListBox1.TabIndex = 23;
+            this.ListBoxVendas.FormattingEnabled = true;
+            this.ListBoxVendas.Location = new System.Drawing.Point(128, 29);
+            this.ListBoxVendas.Name = "ListBoxVendas";
+            this.ListBoxVendas.Size = new System.Drawing.Size(148, 184);
+            this.ListBoxVendas.TabIndex = 22;
             // 
             // FrmVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 233);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.ListBoxVendas);
             this.Controls.Add(this.btnCalculadora);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
@@ -106,6 +106,6 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnConcluir;
         private System.Windows.Forms.Button btnCalculadora;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox ListBoxVendas;
     }
 }

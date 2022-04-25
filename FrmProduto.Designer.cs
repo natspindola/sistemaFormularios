@@ -52,7 +52,6 @@ namespace sistemaFormularios
             this.btnVendas2.TabIndex = 0;
             this.btnVendas2.Text = "Vendas";
             this.btnVendas2.UseVisualStyleBackColor = true;
-            this.btnVendas2.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnAddProduto
             // 
@@ -62,7 +61,6 @@ namespace sistemaFormularios
             this.btnAddProduto.TabIndex = 1;
             this.btnAddProduto.Text = "Adicionar produto";
             this.btnAddProduto.UseVisualStyleBackColor = true;
-            this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
             // button2
             // 
