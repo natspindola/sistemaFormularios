@@ -29,117 +29,8 @@ namespace sistemaFormularios
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtResultado.Clear();
+            txtOperacao.Clear();
             lblOperacao.Text = "";
-        }
-
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "0";
-        }
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "1";
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "2";
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "3";
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "4";
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "5";
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "6";
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "7";
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "8";
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += "9";
-        }
-
-        private void btnVirgula_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text += ".";
-        }
-
-        private void btnAdicao_Click(object sender, EventArgs e)
-        {
-            if(txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "SOMA";
-                lblOperacao.Text = "+";
-            }
-        }
-
-        private void btnSubtracao_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "SUBTRACAO";
-                lblOperacao.Text = "-";
-            }
-        }
-
-        private void btnMultip_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "MULTIPLICACAO";
-                lblOperacao.Text = "*";
-            }
-        }
-
-        private void btnDivisao_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "DIVISAO";
-                lblOperacao.Text = "/";
-            }
-        }
-
-        private void btnPorcentagem_Click(object sender, EventArgs e)
-        {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "PORCENTAGEM";
-                lblOperacao.Text = "%";
-            }
         }
 
         private void btnApagar_Click(object sender, EventArgs e)
@@ -153,14 +44,140 @@ namespace sistemaFormularios
                 txtResultado.Text = Apagar;
                 txtOperacao.Text = Apagar;
             }
-            catch(Exception)
+            catch (Exception)
             {
 
             }
         }
 
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "0";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "1";
+            txtOperacao.Text += "1";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "2";
+            txtOperacao.Text += "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "3";
+            txtOperacao.Text += "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "4";
+            txtOperacao.Text += "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "5";
+            txtOperacao.Text += "5";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "6";
+            txtOperacao.Text += "6";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "7";
+            txtOperacao.Text += "7";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "8";
+            txtOperacao.Text += "8";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += "9";
+            txtOperacao.Text += "9";
+        }
+
+        private void btnVirgula_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text += ".";
+            txtOperacao.Text += ".";
+        }
+
+        private void btnAdicao_Click(object sender, EventArgs e)
+        {
+            txtOperacao.Text += "+";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "SOMA";
+                lblOperacao.Text = "+";
+            }
+        }
+
+        private void btnSubtracao_Click(object sender, EventArgs e)
+        {
+            txtOperacao.Text += "-";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "SUBTRACAO";
+                lblOperacao.Text = "-";
+            }
+        }
+
+        private void btnMultip_Click(object sender, EventArgs e)
+        {
+            txtOperacao.Text += "*";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "MULTIPLICACAO";
+                lblOperacao.Text = "*";
+            }
+        }
+
+        private void btnDivisao_Click(object sender, EventArgs e)
+        {
+            txtOperacao.Text += "/";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "DIVISAO";
+                lblOperacao.Text = "/";
+            }
+        }
+
+        private void btnPorcentagem_Click(object sender, EventArgs e)
+        {
+            txtOperacao.Text += "%";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "PORCENTAGEM";
+                lblOperacao.Text = "%";
+            }
+        }
+
         private void btnIgual_Click(object sender, EventArgs e)
         {
+            txtOperacao.Text += "=";
             valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
             lblOperacao.Text = "";
 
@@ -180,6 +197,8 @@ namespace sistemaFormularios
             {
                 txtResultado.Text = Convert.ToString(valor1 % valor2);
             }
+
+            txtOperacao.Text += txtResultado.Text;
         }
     }
 }
