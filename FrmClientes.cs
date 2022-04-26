@@ -31,7 +31,6 @@ namespace sistemaFormularios
         private void btnClean2_Click(object sender, EventArgs e)
         {
             txtNomePesq.Clear();
-            txtCodigoPesq.Clear();
         }
     }
 }

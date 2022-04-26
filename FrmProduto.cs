@@ -34,8 +34,12 @@ namespace sistemaFormularios
         {
             txtNome.Clear();
             txtValor.Clear();
-            txtCodigo.Clear();
             txtObs.Clear();
+        }
+
+        private void btnAddProduto_Click(object sender, EventArgs e)
+        {
+            listProdutos.Items.Add(txtNome.Text);
         }
     }
 }

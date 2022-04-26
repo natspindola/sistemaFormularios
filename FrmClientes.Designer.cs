@@ -31,7 +31,6 @@ namespace sistemaFormularios
         {
             this.label1 = new System.Windows.Forms.Label();
             this.boxClientes = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnClean2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -39,6 +38,7 @@ namespace sistemaFormularios
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnExcluirCliente = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,16 +60,6 @@ namespace sistemaFormularios
             this.boxClientes.Size = new System.Drawing.Size(617, 173);
             this.boxClientes.TabIndex = 1;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(556, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Adicionar novo cliente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Tomato;
@@ -83,7 +73,7 @@ namespace sistemaFormularios
             // 
             // btnClean2
             // 
-            this.btnClean2.Location = new System.Drawing.Point(334, 367);
+            this.btnClean2.Location = new System.Drawing.Point(317, 367);
             this.btnClean2.Name = "btnClean2";
             this.btnClean2.Size = new System.Drawing.Size(75, 23);
             this.btnClean2.TabIndex = 25;
@@ -93,7 +83,7 @@ namespace sistemaFormularios
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(136, 367);
+            this.button4.Location = new System.Drawing.Point(131, 367);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 24;
@@ -102,7 +92,7 @@ namespace sistemaFormularios
             // 
             // txtNomePesq
             // 
-            this.txtNomePesq.Location = new System.Drawing.Point(136, 326);
+            this.txtNomePesq.Location = new System.Drawing.Point(131, 326);
             this.txtNomePesq.Name = "txtNomePesq";
             this.txtNomePesq.Size = new System.Drawing.Size(273, 20);
             this.txtNomePesq.TabIndex = 21;
@@ -110,7 +100,7 @@ namespace sistemaFormularios
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(92, 333);
+            this.label7.Location = new System.Drawing.Point(87, 333);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 20;
@@ -119,7 +109,7 @@ namespace sistemaFormularios
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(199, 297);
+            this.label6.Location = new System.Drawing.Point(194, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 13);
             this.label6.TabIndex = 19;
@@ -133,6 +123,16 @@ namespace sistemaFormularios
             this.btnExcluirCliente.TabIndex = 26;
             this.btnExcluirCliente.Text = "Excluir cliente";
             this.btnExcluirCliente.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(556, 300);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 46);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Adicionar novo cliente";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmClientes
             // 
@@ -160,7 +160,6 @@ namespace sistemaFormularios
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox boxClientes;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnClean2;
         private System.Windows.Forms.Button button4;
@@ -168,5 +167,6 @@ namespace sistemaFormularios
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnExcluirCliente;
+        private System.Windows.Forms.Button button1;
     }
 }

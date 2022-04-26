@@ -63,6 +63,7 @@ namespace sistemaFormularios
             this.btnAddProduto.TabIndex = 1;
             this.btnAddProduto.Text = "Adicionar";
             this.btnAddProduto.UseVisualStyleBackColor = true;
+            this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
             // button3
             // 
@@ -164,9 +165,9 @@ namespace sistemaFormularios
             // 
             this.listProdutos.BackColor = System.Drawing.SystemColors.Control;
             this.listProdutos.FormattingEnabled = true;
-            this.listProdutos.Location = new System.Drawing.Point(29, 168);
+            this.listProdutos.Location = new System.Drawing.Point(48, 168);
             this.listProdutos.Name = "listProdutos";
-            this.listProdutos.Size = new System.Drawing.Size(406, 108);
+            this.listProdutos.Size = new System.Drawing.Size(387, 108);
             this.listProdutos.TabIndex = 23;
             // 
             // FrmProduto
