@@ -44,6 +44,7 @@ namespace sistemaFormularios
             this.btnExcluirCliente = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.listCliente = new System.Windows.Forms.CheckedListBox();
+            this.maskedtxtTel = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -177,11 +178,20 @@ namespace sistemaFormularios
             this.listCliente.Size = new System.Drawing.Size(356, 154);
             this.listCliente.TabIndex = 36;
             // 
+            // maskedtxtTel
+            // 
+            this.maskedtxtTel.Location = new System.Drawing.Point(85, 280);
+            this.maskedtxtTel.Mask = "(00) 00000-0000";
+            this.maskedtxtTel.Name = "maskedtxtTel";
+            this.maskedtxtTel.Size = new System.Drawing.Size(314, 20);
+            this.maskedtxtTel.TabIndex = 37;
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 421);
+            this.Controls.Add(this.maskedtxtTel);
             this.Controls.Add(this.listCliente);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnExcluirCliente);
@@ -221,5 +231,6 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnExcluirCliente;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckedListBox listCliente;
+        private System.Windows.Forms.MaskedTextBox maskedtxtTel;
     }
 }

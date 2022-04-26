@@ -25,7 +25,7 @@ namespace sistemaFormularios
         private void btnClean_Click(object sender, EventArgs e)
         {
             txtNome.Clear();
-            txtTel.Clear();
+            maskedtxtTel.Clear();
             txtEmail.Clear();
             txtEnder.Clear();
         }
@@ -38,16 +38,16 @@ namespace sistemaFormularios
         private void limparCampos()
         {
             txtNome.Clear();
-            txtTel.Clear();
+            maskedtxtTel.Clear();
             txtEmail.Clear();
             txtEnder.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtTel.Text) & !string.IsNullOrEmpty(txtEmail.Text) & !string.IsNullOrEmpty(txtEnder.Text))
+            if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(maskedtxtTel.Text) & !string.IsNullOrEmpty(txtEmail.Text) & !string.IsNullOrEmpty(txtEnder.Text))
             {
-                listCliente.Items.Add(txtNome.Text + ", " + txtTel.Text + ", " + txtEmail.Text + ", " + txtEnder.Text);
+                listCliente.Items.Add(txtNome.Text + ", " + maskedtxtTel.Text + ", " + txtEmail.Text + ", " + txtEnder.Text);
                 limparCampos();
             }
             else { }
