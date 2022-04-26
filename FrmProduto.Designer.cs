@@ -44,7 +44,7 @@ namespace sistemaFormularios
             this.label5 = new System.Windows.Forms.Label();
             this.listProduto = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtQuant = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnVendas2
@@ -123,7 +123,7 @@ namespace sistemaFormularios
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 133);
+            this.label4.Location = new System.Drawing.Point(45, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 19;
@@ -131,7 +131,7 @@ namespace sistemaFormularios
             // 
             // txtObs
             // 
-            this.txtObs.Location = new System.Drawing.Point(124, 130);
+            this.txtObs.Location = new System.Drawing.Point(124, 104);
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(311, 20);
             this.txtObs.TabIndex = 18;
@@ -175,26 +175,26 @@ namespace sistemaFormularios
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 107);
+            this.label6.Location = new System.Drawing.Point(53, 132);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 27;
             this.label6.Text = "Quantidade:";
             // 
-            // textBox1
+            // txtQuant
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 20);
-            this.textBox1.TabIndex = 26;
+            this.txtQuant.Location = new System.Drawing.Point(124, 129);
+            this.txtQuant.Name = "txtQuant";
+            this.txtQuant.Size = new System.Drawing.Size(311, 20);
+            this.txtQuant.TabIndex = 28;
             // 
             // FrmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 385);
+            this.Controls.Add(this.txtQuant);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listProduto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -211,7 +211,6 @@ namespace sistemaFormularios
             this.Controls.Add(this.btnVendas2);
             this.Name = "FrmProduto";
             this.Text = "Produtos";
-            this.Load += new System.EventHandler(this.FrmProduto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,6 +233,6 @@ namespace sistemaFormularios
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckedListBox listProduto;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtQuant;
     }
 }

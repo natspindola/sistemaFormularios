@@ -40,13 +40,14 @@ namespace sistemaFormularios
             txtNome.Clear();
             txtValor.Clear();
             txtObs.Clear();
+            txtQuant.Clear();
         }
 
         private void btnAddProduto_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtValor.Text))
+            if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtValor.Text) & !string.IsNullOrEmpty(txtQuant.Text))
             {
-                listProduto.Items.Add(txtNome.Text + ", " + txtValor.Text + ", " + txtObs.Text);
+                listProduto.Items.Add(txtNome.Text + ", " + txtValor.Text + ", " + txtObs.Text + ", " + txtQuant.Text);
                 limparCampos();
             }
             else { }
@@ -59,11 +60,6 @@ namespace sistemaFormularios
                 listProduto.Items.RemoveAt(listProduto.SelectedIndex);
             }
             else { }
-        }
-
-        private void FrmProduto_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
