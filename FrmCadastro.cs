@@ -30,11 +30,25 @@ namespace sistemaFormularios
             txtEnder.Clear();
         }
 
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+        }
+
+        private void limparCampos()
+        {
+            txtNome.Clear();
+            txtTel.Clear();
+            txtEmail.Clear();
+            txtEnder.Clear();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtTel.Text) & !string.IsNullOrEmpty(txtEmail.Text) & !string.IsNullOrEmpty(txtEnder.Text))
             {
                 listCliente.Items.Add(txtNome.Text + ", " + txtTel.Text + ", " + txtEmail.Text + ", " + txtEnder.Text);
+                limparCampos();
             }
             else { }
         }
