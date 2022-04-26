@@ -42,13 +42,12 @@ namespace sistemaFormularios
             this.btnLimpar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnPesq = new System.Windows.Forms.Button();
             this.listProduto = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // btnVendas2
             // 
-            this.btnVendas2.Location = new System.Drawing.Point(331, 316);
+            this.btnVendas2.Location = new System.Drawing.Point(252, 316);
             this.btnVendas2.Name = "btnVendas2";
             this.btnVendas2.Size = new System.Drawing.Size(75, 23);
             this.btnVendas2.TabIndex = 0;
@@ -68,7 +67,7 @@ namespace sistemaFormularios
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(202, 316);
+            this.btnExcluir.Location = new System.Drawing.Point(139, 316);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(85, 23);
             this.btnExcluir.TabIndex = 3;
@@ -163,15 +162,6 @@ namespace sistemaFormularios
             this.label5.TabIndex = 22;
             this.label5.Text = "Produtos cadastrados";
             // 
-            // btnPesq
-            // 
-            this.btnPesq.Location = new System.Drawing.Point(78, 316);
-            this.btnPesq.Name = "btnPesq";
-            this.btnPesq.Size = new System.Drawing.Size(85, 23);
-            this.btnPesq.TabIndex = 24;
-            this.btnPesq.Text = "Pesquisar";
-            this.btnPesq.UseVisualStyleBackColor = true;
-            // 
             // listProduto
             // 
             this.listProduto.FormattingEnabled = true;
@@ -186,7 +176,6 @@ namespace sistemaFormularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 353);
             this.Controls.Add(this.listProduto);
-            this.Controls.Add(this.btnPesq);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLimpar);
@@ -222,7 +211,6 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnPesq;
         private System.Windows.Forms.CheckedListBox listProduto;
     }
 }

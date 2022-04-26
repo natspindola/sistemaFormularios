@@ -32,6 +32,11 @@ namespace sistemaFormularios
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            limparCampos();
+        }
+
+        private void limparCampos()
+        {
             txtNome.Clear();
             txtValor.Clear();
             txtObs.Clear();
@@ -39,15 +44,12 @@ namespace sistemaFormularios
 
         private void btnAddProduto_Click(object sender, EventArgs e)
         {
-            listProduto.Items.Add(txtNome.Text);
-            listProduto.Items.Add(txtValor.Text);
-            listProduto.Items.Add(txtObs.Text);
-            Console.WriteLine(" ");
-        }
-
-        private void listProdutos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtValor.Text))
+            {
+                listProduto.Items.Add(txtNome.Text + ", " + txtValor.Text + ", " + txtObs.Text);
+                limparCampos();
+            }
+            else { }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -56,10 +58,7 @@ namespace sistemaFormularios
             {
                 listProduto.Items.RemoveAt(listProduto.SelectedIndex);
             }
-            else
-            {
-
-            }
+            else { }
         }
     }
 }
