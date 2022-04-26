@@ -96,6 +96,7 @@ namespace sistemaFormularios
             this.Controls.Add(this.btnConcluir);
             this.Name = "FrmVendas";
             this.Text = "Vendas";
+            this.Load += new System.EventHandler(this.FrmVendas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

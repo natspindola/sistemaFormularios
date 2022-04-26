@@ -27,5 +27,10 @@ namespace sistemaFormularios
         {
             Close();
         }
+
+        private void FrmVendas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

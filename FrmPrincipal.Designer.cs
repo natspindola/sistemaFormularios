@@ -43,14 +43,13 @@ namespace sistemaFormularios
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuVenda = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCalculadora
             // 
             this.btnCalculadora.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalculadora.Location = new System.Drawing.Point(108, 191);
+            this.btnCalculadora.Location = new System.Drawing.Point(31, 162);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(115, 23);
             this.btnCalculadora.TabIndex = 0;
@@ -63,18 +62,18 @@ namespace sistemaFormularios
             this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastro.Location = new System.Drawing.Point(31, 133);
             this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(132, 23);
+            this.btnCadastro.Size = new System.Drawing.Size(115, 23);
             this.btnCadastro.TabIndex = 1;
-            this.btnCadastro.Text = "Cadastro de clientes";
+            this.btnCadastro.Text = "Clientes";
             this.btnCadastro.UseVisualStyleBackColor = true;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnVenda
             // 
             this.btnVenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVenda.Location = new System.Drawing.Point(178, 162);
+            this.btnVenda.Location = new System.Drawing.Point(170, 162);
             this.btnVenda.Name = "btnVenda";
-            this.btnVenda.Size = new System.Drawing.Size(101, 23);
+            this.btnVenda.Size = new System.Drawing.Size(115, 23);
             this.btnVenda.TabIndex = 2;
             this.btnVenda.Text = "Venda";
             this.btnVenda.UseVisualStyleBackColor = true;
@@ -83,11 +82,11 @@ namespace sistemaFormularios
             // btnProduto
             // 
             this.btnProduto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProduto.Location = new System.Drawing.Point(31, 162);
+            this.btnProduto.Location = new System.Drawing.Point(170, 133);
             this.btnProduto.Name = "btnProduto";
-            this.btnProduto.Size = new System.Drawing.Size(132, 23);
+            this.btnProduto.Size = new System.Drawing.Size(115, 23);
             this.btnProduto.TabIndex = 3;
-            this.btnProduto.Text = "Cadastro de Produto";
+            this.btnProduto.Text = "Produto";
             this.btnProduto.UseVisualStyleBackColor = true;
             this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
@@ -167,24 +166,12 @@ namespace sistemaFormularios
             this.fecharToolStripMenuItem.Text = "Fechar";
             this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
             // 
-            // btnClientes
-            // 
-            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClientes.Location = new System.Drawing.Point(178, 133);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(101, 23);
-            this.btnClientes.TabIndex = 7;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(317, 223);
-            this.Controls.Add(this.btnClientes);
+            this.ClientSize = new System.Drawing.Size(317, 216);
             this.Controls.Add(this.btnProduto);
             this.Controls.Add(this.btnVenda);
             this.Controls.Add(this.btnCadastro);
@@ -193,6 +180,7 @@ namespace sistemaFormularios
             this.MainMenuStrip = this.MenuPrincipal;
             this.Name = "FrmPrincipal";
             this.Text = "Tela principal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.MenuPrincipal.ResumeLayout(false);
             this.MenuPrincipal.PerformLayout();
             this.ResumeLayout(false);
@@ -216,7 +204,6 @@ namespace sistemaFormularios
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.Button btnClientes;
     }
 }
 

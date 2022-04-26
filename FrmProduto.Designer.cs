@@ -31,7 +31,7 @@ namespace sistemaFormularios
         {
             this.btnVendas2 = new System.Windows.Forms.Button();
             this.btnAddProduto = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,12 +42,13 @@ namespace sistemaFormularios
             this.btnLimpar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.listProdutos = new System.Windows.Forms.ListBox();
+            this.btnPesq = new System.Windows.Forms.Button();
+            this.listProduto = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // btnVendas2
             // 
-            this.btnVendas2.Location = new System.Drawing.Point(360, 316);
+            this.btnVendas2.Location = new System.Drawing.Point(331, 316);
             this.btnVendas2.Name = "btnVendas2";
             this.btnVendas2.Size = new System.Drawing.Size(75, 23);
             this.btnVendas2.TabIndex = 0;
@@ -57,7 +58,7 @@ namespace sistemaFormularios
             // 
             // btnAddProduto
             // 
-            this.btnAddProduto.Location = new System.Drawing.Point(29, 316);
+            this.btnAddProduto.Location = new System.Drawing.Point(145, 136);
             this.btnAddProduto.Name = "btnAddProduto";
             this.btnAddProduto.Size = new System.Drawing.Size(79, 23);
             this.btnAddProduto.TabIndex = 1;
@@ -65,14 +66,15 @@ namespace sistemaFormularios
             this.btnAddProduto.UseVisualStyleBackColor = true;
             this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
-            // button3
+            // btnExcluir
             // 
-            this.button3.Location = new System.Drawing.Point(250, 316);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Excluir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExcluir.Location = new System.Drawing.Point(202, 316);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(85, 23);
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // txtNome
             // 
@@ -135,7 +137,7 @@ namespace sistemaFormularios
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(136, 316);
+            this.btnLimpar.Location = new System.Drawing.Point(252, 136);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 20;
@@ -155,27 +157,36 @@ namespace sistemaFormularios
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(177, 141);
+            this.label5.Location = new System.Drawing.Point(177, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 13);
             this.label5.TabIndex = 22;
             this.label5.Text = "Produtos cadastrados";
             // 
-            // listProdutos
+            // btnPesq
             // 
-            this.listProdutos.BackColor = System.Drawing.SystemColors.Control;
-            this.listProdutos.FormattingEnabled = true;
-            this.listProdutos.Location = new System.Drawing.Point(48, 168);
-            this.listProdutos.Name = "listProdutos";
-            this.listProdutos.Size = new System.Drawing.Size(387, 108);
-            this.listProdutos.TabIndex = 23;
+            this.btnPesq.Location = new System.Drawing.Point(78, 316);
+            this.btnPesq.Name = "btnPesq";
+            this.btnPesq.Size = new System.Drawing.Size(85, 23);
+            this.btnPesq.TabIndex = 24;
+            this.btnPesq.Text = "Pesquisar";
+            this.btnPesq.UseVisualStyleBackColor = true;
+            // 
+            // listProduto
+            // 
+            this.listProduto.FormattingEnabled = true;
+            this.listProduto.Location = new System.Drawing.Point(33, 191);
+            this.listProduto.Name = "listProduto";
+            this.listProduto.Size = new System.Drawing.Size(402, 109);
+            this.listProduto.TabIndex = 25;
             // 
             // FrmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 353);
-            this.Controls.Add(this.listProdutos);
+            this.Controls.Add(this.listProduto);
+            this.Controls.Add(this.btnPesq);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLimpar);
@@ -186,7 +197,7 @@ namespace sistemaFormularios
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAddProduto);
             this.Controls.Add(this.btnVendas2);
             this.Name = "FrmProduto";
@@ -200,7 +211,7 @@ namespace sistemaFormularios
 
         private System.Windows.Forms.Button btnVendas2;
         private System.Windows.Forms.Button btnAddProduto;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label1;
@@ -211,6 +222,7 @@ namespace sistemaFormularios
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listProdutos;
+        private System.Windows.Forms.Button btnPesq;
+        private System.Windows.Forms.CheckedListBox listProduto;
     }
 }

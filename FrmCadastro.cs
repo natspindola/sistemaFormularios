@@ -30,10 +30,14 @@ namespace sistemaFormularios
             txtEnder.Clear();
         }
 
-        private void btnClientes_Click(object sender, EventArgs e)
+        private void btnClean2_Click(object sender, EventArgs e)
         {
-            FrmClientes frm = new FrmClientes();
-            frm.Show();
+            txtNomePesq.Clear();
+        }
+
+        private void listBoxClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

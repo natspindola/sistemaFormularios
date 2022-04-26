@@ -47,8 +47,8 @@ namespace sistemaFormularios
             this.txtNomePesq = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.boxClientes = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.listProduto = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -171,6 +171,7 @@ namespace sistemaFormularios
             this.btnClean2.TabIndex = 33;
             this.btnClean2.Text = "Limpar";
             this.btnClean2.UseVisualStyleBackColor = true;
+            this.btnClean2.Click += new System.EventHandler(this.btnClean2_Click);
             // 
             // button4
             // 
@@ -206,15 +207,6 @@ namespace sistemaFormularios
             this.label6.TabIndex = 29;
             this.label6.Text = "PESQUISAR CLIENTE";
             // 
-            // boxClientes
-            // 
-            this.boxClientes.BackColor = System.Drawing.SystemColors.Control;
-            this.boxClientes.FormattingEnabled = true;
-            this.boxClientes.Location = new System.Drawing.Point(59, 48);
-            this.boxClientes.Name = "boxClientes";
-            this.boxClientes.Size = new System.Drawing.Size(340, 121);
-            this.boxClientes.TabIndex = 27;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -224,11 +216,21 @@ namespace sistemaFormularios
             this.label8.TabIndex = 35;
             this.label8.Text = "CLIENTES CADASTRADOS";
             // 
+            // listProduto
+            // 
+            this.listProduto.FormattingEnabled = true;
+            this.listProduto.Location = new System.Drawing.Point(43, 38);
+            this.listProduto.Name = "listProduto";
+            this.listProduto.Size = new System.Drawing.Size(356, 154);
+            this.listProduto.TabIndex = 36;
+            this.listProduto.SelectedIndexChanged += new System.EventHandler(this.listBoxClientes_SelectedIndexChanged);
+            // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 557);
+            this.Controls.Add(this.listProduto);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnExcluirCliente);
             this.Controls.Add(this.btnClean2);
@@ -236,7 +238,6 @@ namespace sistemaFormularios
             this.Controls.Add(this.txtNomePesq);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.boxClientes);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.button1);
@@ -276,7 +277,7 @@ namespace sistemaFormularios
         private System.Windows.Forms.TextBox txtNomePesq;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox boxClientes;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckedListBox listProduto;
     }
 }

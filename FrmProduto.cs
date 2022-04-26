@@ -39,7 +39,27 @@ namespace sistemaFormularios
 
         private void btnAddProduto_Click(object sender, EventArgs e)
         {
-            listProdutos.Items.Add(txtNome.Text);
+            listProduto.Items.Add(txtNome.Text);
+            listProduto.Items.Add(txtValor.Text);
+            listProduto.Items.Add(txtObs.Text);
+            Console.WriteLine(" ");
+        }
+
+        private void listProdutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (listProduto.SelectedIndex != -1)
+            {
+                listProduto.Items.RemoveAt(listProduto.SelectedIndex);
+            }
+            else
+            {
+
+            }
         }
     }
 }
