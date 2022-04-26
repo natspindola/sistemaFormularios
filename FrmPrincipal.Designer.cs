@@ -50,7 +50,7 @@ namespace sistemaFormularios
             // btnCalculadora
             // 
             this.btnCalculadora.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalculadora.Location = new System.Drawing.Point(108, 203);
+            this.btnCalculadora.Location = new System.Drawing.Point(108, 191);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(115, 23);
             this.btnCalculadora.TabIndex = 0;
@@ -61,7 +61,7 @@ namespace sistemaFormularios
             // btnCadastro
             // 
             this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastro.Location = new System.Drawing.Point(21, 133);
+            this.btnCadastro.Location = new System.Drawing.Point(31, 133);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(132, 23);
             this.btnCadastro.TabIndex = 1;
@@ -72,7 +72,7 @@ namespace sistemaFormularios
             // btnVenda
             // 
             this.btnVenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVenda.Location = new System.Drawing.Point(191, 174);
+            this.btnVenda.Location = new System.Drawing.Point(178, 162);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(101, 23);
             this.btnVenda.TabIndex = 2;
@@ -83,7 +83,7 @@ namespace sistemaFormularios
             // btnProduto
             // 
             this.btnProduto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProduto.Location = new System.Drawing.Point(21, 174);
+            this.btnProduto.Location = new System.Drawing.Point(31, 162);
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Size = new System.Drawing.Size(132, 23);
             this.btnProduto.TabIndex = 3;
@@ -99,7 +99,7 @@ namespace sistemaFormularios
             this.fecharToolStripMenuItem});
             this.MenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.MenuPrincipal.Name = "MenuPrincipal";
-            this.MenuPrincipal.Size = new System.Drawing.Size(331, 24);
+            this.MenuPrincipal.Size = new System.Drawing.Size(317, 24);
             this.MenuPrincipal.TabIndex = 6;
             this.MenuPrincipal.Text = "Menu";
             // 
@@ -170,7 +170,7 @@ namespace sistemaFormularios
             // btnClientes
             // 
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClientes.Location = new System.Drawing.Point(191, 133);
+            this.btnClientes.Location = new System.Drawing.Point(178, 133);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(101, 23);
             this.btnClientes.TabIndex = 7;
@@ -183,7 +183,7 @@ namespace sistemaFormularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(331, 239);
+            this.ClientSize = new System.Drawing.Size(317, 223);
             this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnProduto);
             this.Controls.Add(this.btnVenda);
