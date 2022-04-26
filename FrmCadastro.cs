@@ -26,18 +26,26 @@ namespace sistemaFormularios
         {
             txtNome.Clear();
             txtTel.Clear();
-            TxtEmail.Clear();
+            txtEmail.Clear();
             txtEnder.Clear();
         }
 
-        private void btnClean2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            txtNomePesq.Clear();
+            if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtTel.Text) & !string.IsNullOrEmpty(txtEmail.Text) & !string.IsNullOrEmpty(txtEnder.Text))
+            {
+                listCliente.Items.Add(txtNome.Text + ", " + txtTel.Text + ", " + txtEmail.Text + ", " + txtEnder.Text);
+            }
+            else { }
         }
 
-        private void listBoxClientes_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
         {
-            
+            if (listCliente.SelectedIndex != -1)
+            {
+                listCliente.Items.RemoveAt(listCliente.SelectedIndex);
+            }
+            else { }
         }
     }
 }
