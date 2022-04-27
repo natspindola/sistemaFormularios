@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Caching;
 using System.Windows.Forms;
 
 namespace sistemaFormularios
@@ -47,7 +49,14 @@ namespace sistemaFormularios
         {
             if (!string.IsNullOrEmpty(txtNome.Text) & !string.IsNullOrEmpty(txtValor.Text) & !string.IsNullOrEmpty(txtQuant.Text))
             {
+                ObjectCache cache = MemoryCache.Default;
+                CacheItemPolicy policy = new CacheItemPolicy();
                 listProduto.Items.Add(txtNome.Text + ", " + txtValor.Text + ", " + txtObs.Text + ", " + txtQuant.Text);
+
+                cache.Set(new CacheItem("lista", listProduto), policy);
+
+                var retorno = cache.Get("lista");
+
                 limparCampos();
             }
             else { }
@@ -60,6 +69,11 @@ namespace sistemaFormularios
                 listProduto.Items.RemoveAt(listProduto.SelectedIndex);
             }
             else { }
+        }
+
+        private void listProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

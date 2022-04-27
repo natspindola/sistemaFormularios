@@ -171,6 +171,7 @@ namespace sistemaFormularios
             this.listProduto.Name = "listProduto";
             this.listProduto.Size = new System.Drawing.Size(402, 109);
             this.listProduto.TabIndex = 25;
+            this.listProduto.SelectedIndexChanged += new System.EventHandler(this.listProduto_SelectedIndexChanged);
             // 
             // label6
             // 

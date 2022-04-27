@@ -65,6 +65,7 @@ namespace sistemaFormularios
             this.btnConcluir.TabIndex = 11;
             this.btnConcluir.Text = "Concluir venda";
             this.btnConcluir.UseVisualStyleBackColor = false;
+            this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
             // 
             // btnCalculadora
             // 

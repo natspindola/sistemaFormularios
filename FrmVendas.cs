@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,6 +30,18 @@ namespace sistemaFormularios
         }
 
         private void FrmVendas_Load(object sender, EventArgs e)
+        {
+            ObjectCache cache = MemoryCache.Default;
+            CacheItemPolicy policy = new CacheItemPolicy();
+            var retorno =(CheckedListBox) cache.Get("lista");
+
+            foreach (var item in retorno.Items)
+            {
+                ListBoxVendas.Items.Add(item);
+            }
+        }
+
+        private void btnConcluir_Click(object sender, EventArgs e)
         {
 
         }
