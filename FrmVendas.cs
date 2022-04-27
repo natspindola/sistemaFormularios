@@ -34,10 +34,12 @@ namespace sistemaFormularios
             ObjectCache cache = MemoryCache.Default;
             CacheItemPolicy policy = new CacheItemPolicy();
             var retorno =(CheckedListBox) cache.Get("lista");
-
-            foreach (var item in retorno.Items)
+            if(retorno != null)
             {
-                ListBoxVendas.Items.Add(item);
+                foreach (var item in retorno.Items)
+                {
+                    ListBoxVendas.Items.Add(item);
+                }
             }
         }
 
@@ -45,6 +47,7 @@ namespace sistemaFormularios
         {
             FrmFim frmfim = new FrmFim();
             frmfim.Show();
+            Close();
         }
     }
 }

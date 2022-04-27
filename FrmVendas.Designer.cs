@@ -51,7 +51,7 @@ namespace sistemaFormularios
             this.btnCancelar.Location = new System.Drawing.Point(331, 190);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 23);
-            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar venda / Voltar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
@@ -62,7 +62,7 @@ namespace sistemaFormularios
             this.btnConcluir.Location = new System.Drawing.Point(331, 161);
             this.btnConcluir.Name = "btnConcluir";
             this.btnConcluir.Size = new System.Drawing.Size(139, 23);
-            this.btnConcluir.TabIndex = 11;
+            this.btnConcluir.TabIndex = 1;
             this.btnConcluir.Text = "Concluir venda";
             this.btnConcluir.UseVisualStyleBackColor = false;
             this.btnConcluir.Click += new System.EventHandler(this.btnConcluir_Click);
@@ -72,7 +72,7 @@ namespace sistemaFormularios
             this.btnCalculadora.Location = new System.Drawing.Point(331, 29);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(139, 23);
-            this.btnCalculadora.TabIndex = 21;
+            this.btnCalculadora.TabIndex = 3;
             this.btnCalculadora.Text = "Calculadora";
             this.btnCalculadora.UseVisualStyleBackColor = true;
             this.btnCalculadora.Click += new System.EventHandler(this.button3_Click);

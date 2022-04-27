@@ -88,7 +88,7 @@ namespace sistemaFormularios
             this.txtNome.Location = new System.Drawing.Point(84, 253);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(315, 20);
-            this.txtNome.TabIndex = 4;
+            this.txtNome.TabIndex = 1;
             // 
             // txtTel
             // 
@@ -102,14 +102,14 @@ namespace sistemaFormularios
             this.txtEmail.Location = new System.Drawing.Point(84, 306);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(315, 20);
-            this.txtEmail.TabIndex = 6;
+            this.txtEmail.TabIndex = 3;
             // 
             // txtEnder
             // 
             this.txtEnder.Location = new System.Drawing.Point(84, 332);
             this.txtEnder.Name = "txtEnder";
             this.txtEnder.Size = new System.Drawing.Size(315, 20);
-            this.txtEnder.TabIndex = 8;
+            this.txtEnder.TabIndex = 4;
             // 
             // label5
             // 
@@ -125,7 +125,7 @@ namespace sistemaFormularios
             this.button1.Location = new System.Drawing.Point(84, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 23);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -135,7 +135,7 @@ namespace sistemaFormularios
             this.btnClean.Location = new System.Drawing.Point(202, 377);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(91, 23);
-            this.btnClean.TabIndex = 11;
+            this.btnClean.TabIndex = 6;
             this.btnClean.Text = "Limpar";
             this.btnClean.UseVisualStyleBackColor = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
@@ -146,7 +146,7 @@ namespace sistemaFormularios
             this.button3.Location = new System.Drawing.Point(377, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
+            this.button3.TabIndex = 8;
             this.button3.Text = "Voltar";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -156,7 +156,7 @@ namespace sistemaFormularios
             this.btnExcluirCliente.Location = new System.Drawing.Point(318, 377);
             this.btnExcluirCliente.Name = "btnExcluirCliente";
             this.btnExcluirCliente.Size = new System.Drawing.Size(81, 23);
-            this.btnExcluirCliente.TabIndex = 34;
+            this.btnExcluirCliente.TabIndex = 7;
             this.btnExcluirCliente.Text = "Excluir";
             this.btnExcluirCliente.UseVisualStyleBackColor = true;
             this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
@@ -176,7 +176,7 @@ namespace sistemaFormularios
             this.listCliente.Location = new System.Drawing.Point(43, 38);
             this.listCliente.Name = "listCliente";
             this.listCliente.Size = new System.Drawing.Size(356, 154);
-            this.listCliente.TabIndex = 36;
+            this.listCliente.TabIndex = 9;
             // 
             // maskedtxtTel
             // 
@@ -184,7 +184,7 @@ namespace sistemaFormularios
             this.maskedtxtTel.Mask = "(00) 00000-0000";
             this.maskedtxtTel.Name = "maskedtxtTel";
             this.maskedtxtTel.Size = new System.Drawing.Size(314, 20);
-            this.maskedtxtTel.TabIndex = 37;
+            this.maskedtxtTel.TabIndex = 2;
             // 
             // FrmCadastro
             // 

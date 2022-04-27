@@ -19,6 +19,7 @@ namespace sistemaFormularios
         public FrmProduto()
         {
             InitializeComponent();
+            txtNome.Focus();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace sistemaFormularios
         {
             FrmVendas frm = new FrmVendas();
             frm.Show();
+            Close();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

@@ -52,7 +52,7 @@ namespace sistemaFormularios
             this.btnCalculadora.Location = new System.Drawing.Point(31, 162);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(115, 23);
-            this.btnCalculadora.TabIndex = 0;
+            this.btnCalculadora.TabIndex = 3;
             this.btnCalculadora.Text = "Calculadora";
             this.btnCalculadora.UseVisualStyleBackColor = true;
             this.btnCalculadora.Click += new System.EventHandler(this.btnCalculadora_Click);
@@ -74,7 +74,7 @@ namespace sistemaFormularios
             this.btnVenda.Location = new System.Drawing.Point(170, 162);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(115, 23);
-            this.btnVenda.TabIndex = 2;
+            this.btnVenda.TabIndex = 4;
             this.btnVenda.Text = "Venda";
             this.btnVenda.UseVisualStyleBackColor = true;
             this.btnVenda.Click += new System.EventHandler(this.btnVenda_Click);
@@ -85,7 +85,7 @@ namespace sistemaFormularios
             this.btnProduto.Location = new System.Drawing.Point(170, 133);
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Size = new System.Drawing.Size(115, 23);
-            this.btnProduto.TabIndex = 3;
+            this.btnProduto.TabIndex = 2;
             this.btnProduto.Text = "Produto";
             this.btnProduto.UseVisualStyleBackColor = true;
             this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
@@ -119,43 +119,43 @@ namespace sistemaFormularios
             // MenuCadastro
             // 
             this.MenuCadastro.Name = "MenuCadastro";
-            this.MenuCadastro.Size = new System.Drawing.Size(137, 22);
+            this.MenuCadastro.Size = new System.Drawing.Size(180, 22);
             this.MenuCadastro.Text = "Cadastro";
             this.MenuCadastro.Click += new System.EventHandler(this.MenuCadastro_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // MenuCalc
             // 
             this.MenuCalc.Name = "MenuCalc";
-            this.MenuCalc.Size = new System.Drawing.Size(137, 22);
+            this.MenuCalc.Size = new System.Drawing.Size(180, 22);
             this.MenuCalc.Text = "Calculadora";
             this.MenuCalc.Click += new System.EventHandler(this.MenuCalc_Click_1);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // MenuProduto
             // 
             this.MenuProduto.Name = "MenuProduto";
-            this.MenuProduto.Size = new System.Drawing.Size(137, 22);
+            this.MenuProduto.Size = new System.Drawing.Size(180, 22);
             this.MenuProduto.Text = "Produto";
             this.MenuProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(134, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // MenuVenda
             // 
             this.MenuVenda.Name = "MenuVenda";
-            this.MenuVenda.Size = new System.Drawing.Size(137, 22);
+            this.MenuVenda.Size = new System.Drawing.Size(180, 22);
             this.MenuVenda.Text = "Venda";
             this.MenuVenda.Click += new System.EventHandler(this.btnVenda_Click);
             // 
@@ -180,7 +180,6 @@ namespace sistemaFormularios
             this.MainMenuStrip = this.MenuPrincipal;
             this.Name = "FrmPrincipal";
             this.Text = "Tela principal";
-            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.MenuPrincipal.ResumeLayout(false);
             this.MenuPrincipal.PerformLayout();
             this.ResumeLayout(false);

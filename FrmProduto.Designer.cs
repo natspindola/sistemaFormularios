@@ -52,7 +52,7 @@ namespace sistemaFormularios
             this.btnVendas2.Location = new System.Drawing.Point(252, 341);
             this.btnVendas2.Name = "btnVendas2";
             this.btnVendas2.Size = new System.Drawing.Size(75, 23);
-            this.btnVendas2.TabIndex = 0;
+            this.btnVendas2.TabIndex = 9;
             this.btnVendas2.Text = "Vendas";
             this.btnVendas2.UseVisualStyleBackColor = true;
             this.btnVendas2.Click += new System.EventHandler(this.btnVendas2_Click);
@@ -62,7 +62,7 @@ namespace sistemaFormularios
             this.btnAddProduto.Location = new System.Drawing.Point(145, 156);
             this.btnAddProduto.Name = "btnAddProduto";
             this.btnAddProduto.Size = new System.Drawing.Size(79, 23);
-            this.btnAddProduto.TabIndex = 1;
+            this.btnAddProduto.TabIndex = 5;
             this.btnAddProduto.Text = "Adicionar";
             this.btnAddProduto.UseVisualStyleBackColor = true;
             this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
@@ -72,7 +72,7 @@ namespace sistemaFormularios
             this.btnExcluir.Location = new System.Drawing.Point(139, 341);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(85, 23);
-            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.TabIndex = 8;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -82,14 +82,14 @@ namespace sistemaFormularios
             this.txtNome.Location = new System.Drawing.Point(124, 52);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(311, 20);
-            this.txtNome.TabIndex = 4;
+            this.txtNome.TabIndex = 1;
             // 
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(124, 78);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(311, 20);
-            this.txtValor.TabIndex = 5;
+            this.txtValor.TabIndex = 2;
             // 
             // label1
             // 
@@ -115,7 +115,7 @@ namespace sistemaFormularios
             this.button1.Location = new System.Drawing.Point(399, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 10;
             this.button1.Text = "Voltar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -134,14 +134,14 @@ namespace sistemaFormularios
             this.txtObs.Location = new System.Drawing.Point(124, 104);
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(311, 20);
-            this.txtObs.TabIndex = 18;
+            this.txtObs.TabIndex = 3;
             // 
             // btnLimpar
             // 
             this.btnLimpar.Location = new System.Drawing.Point(252, 156);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpar.TabIndex = 20;
+            this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -170,7 +170,7 @@ namespace sistemaFormularios
             this.listProduto.Location = new System.Drawing.Point(33, 216);
             this.listProduto.Name = "listProduto";
             this.listProduto.Size = new System.Drawing.Size(402, 109);
-            this.listProduto.TabIndex = 25;
+            this.listProduto.TabIndex = 7;
             this.listProduto.SelectedIndexChanged += new System.EventHandler(this.listProduto_SelectedIndexChanged);
             // 
             // label6
@@ -187,7 +187,7 @@ namespace sistemaFormularios
             this.txtQuant.Location = new System.Drawing.Point(124, 129);
             this.txtQuant.Name = "txtQuant";
             this.txtQuant.Size = new System.Drawing.Size(311, 20);
-            this.txtQuant.TabIndex = 28;
+            this.txtQuant.TabIndex = 4;
             // 
             // FrmProduto
             // 

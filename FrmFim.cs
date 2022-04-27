@@ -21,12 +21,14 @@ namespace sistemaFormularios
         {
             FrmVendas frmvendas = new FrmVendas();
             frmvendas.Show();
+            Close();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
             FrmPrincipal frmprincipal = new FrmPrincipal();
             frmprincipal.Show();
+            Close();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
