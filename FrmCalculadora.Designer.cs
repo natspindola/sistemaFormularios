@@ -68,188 +68,206 @@ namespace sistemaFormularios
             // 
             // btn1
             // 
+            this.btn1.BackColor = System.Drawing.Color.White;
             this.btn1.Location = new System.Drawing.Point(11, 206);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(56, 46);
             this.btn1.TabIndex = 22;
             this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
+            this.btn2.BackColor = System.Drawing.Color.White;
             this.btn2.Location = new System.Drawing.Point(73, 206);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(56, 46);
             this.btn2.TabIndex = 23;
             this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
+            this.btn3.BackColor = System.Drawing.Color.White;
             this.btn3.Location = new System.Drawing.Point(135, 206);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(56, 46);
             this.btn3.TabIndex = 24;
             this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
+            this.btn4.BackColor = System.Drawing.Color.White;
             this.btn4.Location = new System.Drawing.Point(11, 154);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(56, 46);
             this.btn4.TabIndex = 25;
             this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
+            this.btn5.BackColor = System.Drawing.Color.White;
             this.btn5.Location = new System.Drawing.Point(73, 154);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(56, 46);
             this.btn5.TabIndex = 26;
             this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
+            this.btn6.BackColor = System.Drawing.Color.White;
             this.btn6.Location = new System.Drawing.Point(135, 154);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(56, 46);
             this.btn6.TabIndex = 27;
             this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
+            this.btn7.BackColor = System.Drawing.Color.White;
             this.btn7.Location = new System.Drawing.Point(11, 102);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(56, 46);
             this.btn7.TabIndex = 28;
             this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
+            this.btn8.BackColor = System.Drawing.Color.White;
             this.btn8.Location = new System.Drawing.Point(73, 102);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(56, 46);
             this.btn8.TabIndex = 29;
             this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
+            this.btn9.BackColor = System.Drawing.Color.White;
             this.btn9.Location = new System.Drawing.Point(135, 102);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(56, 46);
             this.btn9.TabIndex = 30;
             this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn0
             // 
+            this.btn0.BackColor = System.Drawing.Color.White;
             this.btn0.Location = new System.Drawing.Point(11, 258);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(118, 46);
             this.btn0.TabIndex = 31;
             this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnAdicao
             // 
+            this.btnAdicao.BackColor = System.Drawing.Color.White;
             this.btnAdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicao.Location = new System.Drawing.Point(197, 258);
             this.btnAdicao.Name = "btnAdicao";
             this.btnAdicao.Size = new System.Drawing.Size(56, 46);
             this.btnAdicao.TabIndex = 32;
             this.btnAdicao.Text = "+";
-            this.btnAdicao.UseVisualStyleBackColor = true;
+            this.btnAdicao.UseVisualStyleBackColor = false;
             this.btnAdicao.Click += new System.EventHandler(this.btnAdicao_Click);
             // 
             // btnSubtracao
             // 
+            this.btnSubtracao.BackColor = System.Drawing.Color.White;
             this.btnSubtracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubtracao.Location = new System.Drawing.Point(197, 206);
             this.btnSubtracao.Name = "btnSubtracao";
             this.btnSubtracao.Size = new System.Drawing.Size(56, 46);
             this.btnSubtracao.TabIndex = 33;
             this.btnSubtracao.Text = "-";
-            this.btnSubtracao.UseVisualStyleBackColor = true;
+            this.btnSubtracao.UseVisualStyleBackColor = false;
             this.btnSubtracao.Click += new System.EventHandler(this.btnSubtracao_Click);
             // 
             // btnMultip
             // 
+            this.btnMultip.BackColor = System.Drawing.Color.White;
             this.btnMultip.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMultip.Location = new System.Drawing.Point(197, 154);
             this.btnMultip.Name = "btnMultip";
             this.btnMultip.Size = new System.Drawing.Size(56, 46);
             this.btnMultip.TabIndex = 34;
             this.btnMultip.Text = "*";
-            this.btnMultip.UseVisualStyleBackColor = true;
+            this.btnMultip.UseVisualStyleBackColor = false;
             this.btnMultip.Click += new System.EventHandler(this.btnMultip_Click);
             // 
             // btnDivisao
             // 
+            this.btnDivisao.BackColor = System.Drawing.Color.White;
             this.btnDivisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDivisao.Location = new System.Drawing.Point(197, 102);
             this.btnDivisao.Name = "btnDivisao";
             this.btnDivisao.Size = new System.Drawing.Size(56, 46);
             this.btnDivisao.TabIndex = 35;
             this.btnDivisao.Text = "/";
-            this.btnDivisao.UseVisualStyleBackColor = true;
+            this.btnDivisao.UseVisualStyleBackColor = false;
             this.btnDivisao.Click += new System.EventHandler(this.btnDivisao_Click);
             // 
             // btnVirgula
             // 
+            this.btnVirgula.BackColor = System.Drawing.Color.White;
             this.btnVirgula.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVirgula.Location = new System.Drawing.Point(135, 258);
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(56, 46);
             this.btnVirgula.TabIndex = 36;
             this.btnVirgula.Text = ".";
-            this.btnVirgula.UseVisualStyleBackColor = true;
+            this.btnVirgula.UseVisualStyleBackColor = false;
             this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
             this.btnLimpar.Location = new System.Drawing.Point(259, 154);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(56, 46);
             this.btnLimpar.TabIndex = 38;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnIgual
             // 
+            this.btnIgual.BackColor = System.Drawing.Color.White;
             this.btnIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIgual.Location = new System.Drawing.Point(259, 206);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(56, 98);
             this.btnIgual.TabIndex = 40;
             this.btnIgual.Text = "=";
-            this.btnIgual.UseVisualStyleBackColor = true;
+            this.btnIgual.UseVisualStyleBackColor = false;
             this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btnApagar
             // 
+            this.btnApagar.BackColor = System.Drawing.Color.White;
             this.btnApagar.Location = new System.Drawing.Point(259, 102);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(56, 46);
             this.btnApagar.TabIndex = 41;
             this.btnApagar.Text = "Apagar";
-            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.UseVisualStyleBackColor = false;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // label1
@@ -300,6 +318,7 @@ namespace sistemaFormularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(326, 317);
             this.Controls.Add(this.lblOperacao1);
             this.Controls.Add(this.txtOperacao);

@@ -141,12 +141,13 @@ namespace sistemaFormularios
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
             this.btnLimpar.Location = new System.Drawing.Point(252, 156);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // label3
@@ -196,7 +197,7 @@ namespace sistemaFormularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(475, 385);
             this.Controls.Add(this.txtQuant);
             this.Controls.Add(this.label6);
