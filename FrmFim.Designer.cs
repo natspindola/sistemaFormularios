@@ -66,6 +66,7 @@ namespace sistemaFormularios
             this.btnInicio.TabIndex = 2;
             this.btnInicio.Text = "Início";
             this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // btnVendas
             // 
@@ -75,6 +76,7 @@ namespace sistemaFormularios
             this.btnVendas.TabIndex = 3;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
             // btnFechar
             // 
@@ -84,6 +86,7 @@ namespace sistemaFormularios
             this.btnFechar.TabIndex = 4;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // FrmFim
             // 

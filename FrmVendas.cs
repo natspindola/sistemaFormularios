@@ -43,7 +43,8 @@ namespace sistemaFormularios
 
         private void btnConcluir_Click(object sender, EventArgs e)
         {
-
+            FrmFim frmfim = new FrmFim();
+            frmfim.Show();
         }
     }
 }

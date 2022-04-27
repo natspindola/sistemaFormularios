@@ -37,8 +37,8 @@ namespace sistemaFormularios
 
         private void btnVenda_Click(object sender, EventArgs e)
         {
-            FrmVendas frm = new FrmVendas();
-            frm.Show();
+            FrmVendas frmvendas = new FrmVendas();
+            frmvendas.Show();
         }
 
         private void MenuCadastro_Click(object sender, EventArgs e)
