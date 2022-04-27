@@ -49,22 +49,24 @@ namespace sistemaFormularios
             // 
             // btnVendas2
             // 
+            this.btnVendas2.BackColor = System.Drawing.Color.White;
             this.btnVendas2.Location = new System.Drawing.Point(252, 341);
             this.btnVendas2.Name = "btnVendas2";
             this.btnVendas2.Size = new System.Drawing.Size(75, 23);
             this.btnVendas2.TabIndex = 9;
             this.btnVendas2.Text = "Vendas";
-            this.btnVendas2.UseVisualStyleBackColor = true;
+            this.btnVendas2.UseVisualStyleBackColor = false;
             this.btnVendas2.Click += new System.EventHandler(this.btnVendas2_Click);
             // 
             // btnAddProduto
             // 
+            this.btnAddProduto.BackColor = System.Drawing.Color.White;
             this.btnAddProduto.Location = new System.Drawing.Point(145, 156);
             this.btnAddProduto.Name = "btnAddProduto";
             this.btnAddProduto.Size = new System.Drawing.Size(79, 23);
             this.btnAddProduto.TabIndex = 5;
             this.btnAddProduto.Text = "Adicionar";
-            this.btnAddProduto.UseVisualStyleBackColor = true;
+            this.btnAddProduto.UseVisualStyleBackColor = false;
             this.btnAddProduto.Click += new System.EventHandler(this.btnAddProduto_Click);
             // 
             // btnExcluir
@@ -79,6 +81,7 @@ namespace sistemaFormularios
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.Color.White;
             this.txtNome.Location = new System.Drawing.Point(124, 52);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(311, 20);
@@ -193,6 +196,7 @@ namespace sistemaFormularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(475, 385);
             this.Controls.Add(this.txtQuant);
             this.Controls.Add(this.label6);

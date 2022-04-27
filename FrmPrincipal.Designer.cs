@@ -29,6 +29,7 @@ namespace sistemaFormularios
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.btnCalculadora = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnVenda = new System.Windows.Forms.Button();
@@ -43,56 +44,62 @@ namespace sistemaFormularios
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuVenda = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MenuPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCalculadora
             // 
+            this.btnCalculadora.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnCalculadora.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalculadora.Location = new System.Drawing.Point(31, 162);
+            this.btnCalculadora.Location = new System.Drawing.Point(34, 185);
             this.btnCalculadora.Name = "btnCalculadora";
             this.btnCalculadora.Size = new System.Drawing.Size(115, 23);
             this.btnCalculadora.TabIndex = 3;
             this.btnCalculadora.Text = "Calculadora";
-            this.btnCalculadora.UseVisualStyleBackColor = true;
+            this.btnCalculadora.UseVisualStyleBackColor = false;
             this.btnCalculadora.Click += new System.EventHandler(this.btnCalculadora_Click);
             // 
             // btnCadastro
             // 
+            this.btnCadastro.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnCadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastro.Location = new System.Drawing.Point(31, 133);
+            this.btnCadastro.Location = new System.Drawing.Point(34, 156);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(115, 23);
             this.btnCadastro.TabIndex = 1;
             this.btnCadastro.Text = "Clientes";
-            this.btnCadastro.UseVisualStyleBackColor = true;
+            this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnVenda
             // 
+            this.btnVenda.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnVenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVenda.Location = new System.Drawing.Point(170, 162);
+            this.btnVenda.Location = new System.Drawing.Point(173, 185);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(115, 23);
             this.btnVenda.TabIndex = 4;
             this.btnVenda.Text = "Venda";
-            this.btnVenda.UseVisualStyleBackColor = true;
+            this.btnVenda.UseVisualStyleBackColor = false;
             this.btnVenda.Click += new System.EventHandler(this.btnVenda_Click);
             // 
             // btnProduto
             // 
+            this.btnProduto.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnProduto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProduto.Location = new System.Drawing.Point(170, 133);
+            this.btnProduto.Location = new System.Drawing.Point(173, 156);
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Size = new System.Drawing.Size(115, 23);
             this.btnProduto.TabIndex = 2;
             this.btnProduto.Text = "Produto";
-            this.btnProduto.UseVisualStyleBackColor = true;
+            this.btnProduto.UseVisualStyleBackColor = false;
             this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
             // MenuPrincipal
             // 
-            this.MenuPrincipal.BackColor = System.Drawing.Color.DarkGray;
+            this.MenuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.MenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoToolStripMenuItem,
             this.fecharToolStripMenuItem});
@@ -104,6 +111,7 @@ namespace sistemaFormularios
             // 
             // novoToolStripMenuItem
             // 
+            this.novoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.novoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuCadastro,
             this.toolStripSeparator3,
@@ -161,17 +169,29 @@ namespace sistemaFormularios
             // 
             // fecharToolStripMenuItem
             // 
+            this.fecharToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
             this.fecharToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fecharToolStripMenuItem.Text = "Fechar";
             this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(34, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(254, 129);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(317, 216);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnProduto);
             this.Controls.Add(this.btnVenda);
             this.Controls.Add(this.btnCadastro);
@@ -182,6 +202,7 @@ namespace sistemaFormularios
             this.Text = "Tela principal";
             this.MenuPrincipal.ResumeLayout(false);
             this.MenuPrincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +224,7 @@ namespace sistemaFormularios
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
